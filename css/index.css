@@ -2,10 +2,22 @@
     text-decoration: none;
     list-style: none;
   }
+
+  :root{
+    --darkest-color: #8E8D8A;
+    --background-color:#EAE7DC;
+    --light-accent: #E98074;
+    --dark-accent:#E85A4F;
+    --cappuchino: #D8C3A5;
+    --white: #eee;
+
+   
+}
+
   
   html, body, .wrapper {
     height: 100%;
-    background-color: #FDFFFC;
+    background-color: var(--background-color);
     font-family: 'Quattrocento', serif;
   }
   
@@ -15,14 +27,14 @@
   }
   
   p {
-    color: #01213b;
+    color: var(--darkest-color);
     font-size: 1.2em;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
   }
   
   a {
-    color: #01213b;
+    color: var(--darkest-color);
     font-family: 'Quattrocento', serif;
   }
   
@@ -74,6 +86,10 @@
   .bold {
     font-weight: 400;
   }
+
+  .highlight {
+    color: var(--light-accent);
+  }
   
   .flex-col {
     display: flex;
@@ -108,11 +124,12 @@
     transition: font-size 0.3s ease;
     line-height: 1.4em;
     font-size: 1.2em;
-    border-bottom: 3px solid #FDFFFC;
+    border-bottom: 3px solid var(--white);
   }
   
   .nav-link-open {
     font-size: 1.4em;
+    color:var(--dark-accent);
   }
   
   .nav-list li {
@@ -125,7 +142,7 @@
   }
   
   .nav-list a:hover {
-    border-bottom: 3px solid #063B67;
+    border-bottom: 3px solid var(--dark-accent);
   }
   
   .social {
@@ -142,7 +159,7 @@
     display: flex;
     padding: 0 5% 0 5%;
     flex: 0 1 100%;
-    border-left: 1px solid #8c99a3;
+    border-left: 1px solid var(--light-accent);
     overflow: auto;
     justify-content: center;
   }
@@ -177,7 +194,7 @@
   }
   
   .project-title {
-    color: #01213b;
+    color: var(--darkest-color);
     flex: 1 1 auto;
     text-align: center;
   }
@@ -195,7 +212,7 @@
   }
   
   .red-links {
-    color: #063B67;
+    color: var(--dark-accent);
   }
   
   .red-links:hover {
@@ -203,11 +220,11 @@
   }
 
   .social-links {
-    color: #01213b;
+    color: var(--darkest-color);
   }
   
   .social-links:hover {
-    color: #063B67;
+    color: var(--dark-accent);
   }
 
   .button-wrap {
@@ -217,47 +234,47 @@
   
   .btn-dark {
     font-family: 'Lato', sans-serif;
-    color: #ffffff;
+    color: var(--background-color);
     font-size: 1.2em;
-    background: #01213b;
+    background: var(--darkest-color);
     padding: 5px 16px;
     text-decoration: none;
     border: none;
     min-width: 134px;
-    border: 2px solid #01213b;
+    border: 2px solid var(--darkest-color);
   }
   
   .btn-dark:hover {
     cursor: pointer;
-    background-color: #063B67;
-    border: 2px solid #063B67;
+    background-color: var(--light-accent);
+    border: 2px solid var(--light-accent);
   }
   
   .btn-light {
     font-family: 'Lato', sans-serif;
-    color: #01213b;
+    color: var(--darkest-color);
     font-size: 1.2em;
-    background: #ffffff;
-    padding: 5px 16px;
+    background: var(--background-color);
+    padding: 5px 16px; 
     text-decoration: none;
     border: none;
     min-width: 134px;
     margin-left: 10px;
-    border: 2px solid #01213b;
+    border: 2px solid var(--darkest-color);
   }
   
   .btn-light:hover {
     cursor: pointer;
-    color: #ffffff;
-    background-color: #063B67;
-    border: 2px solid #063B67;
+    color: var(--background-color);
+    background-color: var(--light-accent);
+    border: 2px solid var(--light-accent);
   }
   
   .card {
     margin: 1em 1em 4em 1em;
     max-width: 800px;
     -webkit-box-orient: vertical;
-    border: 1px solid #eee;
+    border: 1px solid var(--cappuchino);
   }
   
   .img-container {
@@ -308,7 +325,7 @@
   
   .card-title {
     margin: 0;
-    color: #01213b;
+    color:  var(--light-accent);
     font-size: 1.6em;
     font-family: 'Quattrocento', serif;
   }
@@ -343,7 +360,7 @@
   }
   
   .main-content::-webkit-scrollbar-thumb {
-    background-color: #063B67;
+    background-color: var(--dark-accent);
   }
   
   @media all and (max-width: 800px) {
@@ -369,14 +386,14 @@
     }
   
     .nav-link {
-      color: #01213b;
+      color: var(--darkest-color);
       line-height: 1.4em;
       border-bottom: 3px solid #FDFFFC;
       font-size: 1em;
     }
   
     .nav-link-open {
-      font-size: 1.2em;
+      font-size: 1.3em;
     }
   
     .nav-list li:not(:last-child) {
