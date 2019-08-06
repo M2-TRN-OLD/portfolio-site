@@ -18,7 +18,7 @@ function showDefine() {
   
   function showAbout() {
     $('.main-content .content-wrap').children().hide();
-    $('#about').fadeIn();
+    $('.about-wrap').fadeIn();
     $('.main-content').removeClass("clear-padding");
     $('.main-content').addClass("align-center");
   }
