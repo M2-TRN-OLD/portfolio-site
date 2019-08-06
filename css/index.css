@@ -273,7 +273,9 @@
   
   .img-container {
     position: relative;
-    width: 100%;
+    width: 90%;
+    margin:0 auto;
+    
   }
   
   .view-project-hover {
@@ -323,6 +325,7 @@
   
   .card-title {
     margin: 0;
+    padding: 3%;
     color:  var(--dark-accent);
     font-size: 1.6em;
     font-family: 'Quattrocento', serif;
@@ -419,6 +422,7 @@
     .projects-wrap {
       margin-top: 5%;
     }
+
   
     .card-block {
       padding: 1em;
