@@ -169,7 +169,8 @@
     flex: 1;
   }
   
-  .content-wrap {
+  .content-wrap,
+  .about-wrap {
     display: flex;
     height: 100%;
   }
@@ -385,7 +386,7 @@
     .nav-link {
       color: var(--dark-accent);
       line-height: 1.4em;
-      border-bottom: 3px solid var(--borders-hover);
+      border-bottom: 3px solid var(--background-color);
       font-size: 1em;
     }
   
